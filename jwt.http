@@ -1,0 +1,27 @@
+GET http://localhost:1202/books
+Authorization: Beaer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkthbmUiLCJpYXQiOjE3MTI1Njg1NzMsImV4cCI6MTcxMjU2ODYwM30.7yQJXzQgr0kAEoYsljxq4hrIfLMhN02HvKSeYN3MTrQ
+
+###
+
+POST http://localhost:1203/login
+Content-Type: application/json
+
+{
+    "username": "Kane"
+}
+
+###
+POST http://localhost:1203/refreshToken
+Content-Type: application/json
+
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkthbmUiLCJpYXQiOjE3MTI1Njg2NDN9.ag3wsgqKwR5RiBvL66ePBqBdtmMAhKD5HzFXR0XQJeY"
+}
+
+###
+POST http://localhost:1203/logout
+Content-Type: application/json
+
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkthbmUiLCJpYXQiOjE3MTI1Njg2NDN9.ag3wsgqKwR5RiBvL66ePBqBdtmMAhKD5HzFXR0XQJeY"
+}
